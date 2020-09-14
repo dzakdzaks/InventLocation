@@ -1,0 +1,3 @@
+include ':invent_location'
+include ':app'
+rootProject.name = "InventLocation"
