@@ -1,9 +1,8 @@
-package com.dzakdzaks.invent_location
+package com.dzakdzaks.iLocation
 
 import android.location.Address
 import android.location.Location
 import com.google.android.gms.maps.model.LatLng
-import java.io.IOException
 
 /**
  * ==================================//==================================

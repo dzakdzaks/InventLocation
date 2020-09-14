@@ -1,4 +1,4 @@
-package com.dzakdzaks.invent_location
+package com.dzakdzaks.iLocation
 
 import android.Manifest
 import android.app.Activity

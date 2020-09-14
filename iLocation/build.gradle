@@ -1,6 +1,34 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-android-extensions'
+apply plugin: 'com.jfrog.bintray'
+apply plugin: 'com.github.dcendents.android-maven'
+
+ext {
+    bintrayRepo = 'Maven'
+    bintrayName = 'iLocation'   // Has to be same as your library module name
+
+    publishedGroupId = 'com.github.dzakdzaks'
+    libraryName = 'ILocation'
+    artifact = 'iLocation'     // Has to be same as your library module name
+
+    libraryDescription = 'Android Library to get location'
+
+    // Your github repo link
+    siteUrl = 'https://github.com/dzakdzaks/InventLocation'
+    gitUrl = 'https://github.com/dzakdzaks/InventLocation.git'
+    githubRepository = 'dzakdzaks/InventLocation'
+
+    libraryVersion = '1.0'
+
+    developerId = 'dzakdzaks'
+    developerName = 'Muhammad Dzaky Rahmanto'
+    developerEmail = 'dzakyrahmanto@gmail.com'
+
+    licenseName = 'The Apache Software License, Version 2.0'
+    licenseUrl = 'http://www.apache.org/licenses/LICENSE-2.0.txt'
+    allLicenses = ["Apache-2.0"]
+}
 
 android {
     compileSdkVersion 30
@@ -38,5 +66,7 @@ dependencies {
 
 }
 
-apply from: 'install.gradle'
-apply from: 'bintray.gradle'
+
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/installv1.gradle'
+apply from: 'https://raw.githubusercontent.com/nisrulz/JCenter/master/bintrayv1.gradle'
+

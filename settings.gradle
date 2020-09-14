@@ -1,3 +1,3 @@
-include ':invent_location'
+include ':iLocation'
 include ':app'
 rootProject.name = "InventLocation"
